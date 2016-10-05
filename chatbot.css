@@ -50,13 +50,14 @@ h4 {
 }
 
 #chat-area {
+     color: pink;
     -webkit-border-radius: 5;
     -moz-border-radius: 5;
     border-radius: 5px;
     height:100%;
     overflow: hidden;
     height: 450px;
-    border: 1px solid #C0C2C5;
+    border: 1px solid #00FFFF;
     padding: 10px;
     font-size: 18px;
 }
@@ -94,4 +95,8 @@ h4 {
     border: 0px solid #C0C2C5;
     font-size: 16px;
     font-weight: bold;
+}
+body {
+    background-image: url("https://phenomenex.files.wordpress.com/2016/01/water.jpg");
+    background-color: #cccccc;
 }
