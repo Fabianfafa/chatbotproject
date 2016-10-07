@@ -1,14 +1,28 @@
+var now = new Date(Date.now());
 
+var fallback = ["dont understand", "come agian?"];
    function askQuestion(){
   var question = document.getElementById("input").value;
+  question = question.toLowerCase()
   var giveresponse = responses[question]
-document.getElementById("chat-area").innerHTML += giveresponse +  " " + "<br>";
+  if (giveresponse == undefined){
+    var rand = Math.floor((Math.random()* fallback.length));
+    document.getElementById("chat-area").innerHTML +=  fallback[rand] +  " " + "<br>";
+  } else {document.getElementById("chat-area").innerHTML += giveresponse +  " " + "<br>";
 }
+}
+
+$(document).keydown(function(e) {
+ if (e.keyCode == 13) {
+   askQuestion();
+ }
+});
+
 var responses = {
   "yes" : "no",
-  "Whats yu name ?" : "young child",
-  "How old are you?" : "very old",
-  "what time is it?" :  "no",
+  "whats yu name ?" : "young child",
+  "how old are you?" : "very old",
+  "what time is it?" :  now,
   "haha" : "hahahahahahaha",
-  "How are you?" : "Well",
+  "how are you?" : "Well"
 }
