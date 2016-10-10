@@ -24,5 +24,10 @@ var responses = {
   "how old are you?" : "very old",
   "what time is it?" :  now,
   "haha" : "hahahahahahaha",
-  "how are you?" : "Well"
+  "how are you?" : "Well",
+  "Who has the best ep" : "SPV",
+  "what good" : "jr western bacon burger",
+  "who like pasta" : "i do",
+  "do you play sports" : "yes soccer",
+  "how tall are you" : "taller than a tree ill tell  you whut",
 }
